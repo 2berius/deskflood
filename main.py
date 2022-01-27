@@ -30,7 +30,7 @@ def check_os():
         deskpath = f'C:\\Users\\{user}\\Desktop'
 
     elif os_type.lower().startswith('linux'):
-        deskpath = f'~/Desktop'
+        deskpath = f'/home/{user}/Desktop'
 
     else:
         logging.warning(" This OS is not supported. Shutting down.")
